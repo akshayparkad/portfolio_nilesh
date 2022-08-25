@@ -1,0 +1,44 @@
+.row3{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-right: 192px;
+    margin-left: 192px;
+
+}
+
+.column3{
+    flex: 25%;
+    padding:0px;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .row3{
+       margin-left: 20px;
+       margin-right: 20px;
+
+    }
+
+    /* .column3{
+        width: 100%;
+    } */
+
+   
+}
+
+@media only screen and (max-width: 450px) {
+    .row3{
+        margin-left: 20px;
+        margin-right: 20px;
+       flex-direction: column;
+    }
+
+    /* .column3{
+        width: 100%;
+    } */
+
+}

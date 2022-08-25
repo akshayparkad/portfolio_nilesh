@@ -1,0 +1,36 @@
+.project1 {
+    margin-right: 192px;
+    margin-left: 192px;
+}
+
+.project1 img{
+    width: 100%;
+}
+
+.project1 h2{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.project1 b{
+    color:var(--mainColor);
+}
+
+@media only screen and (max-width:700px) {
+    
+    .project1 {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    ol{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    ul{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+

@@ -1,0 +1,38 @@
+.row2{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-right: 192px;
+    margin-left: 192px;
+
+}
+
+.column2{
+    flex: 50%;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.row2 .column2 img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .column2 {
+        width: 100%;
+      }
+
+    .row2{
+        margin: 0;
+        flex-direction: column;
+    }
+
+      .row2 .column2 img{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    
+}

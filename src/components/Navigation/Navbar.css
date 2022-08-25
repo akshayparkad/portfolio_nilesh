@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Prompt:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+:root{
+    --mainColor: #2f2f2f;
+    --mainColorMedium: #6b6969;
+    --maincolorLight: #F2F0F0;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 192px;
+    margin-right: 192px;
+    padding: 0 2rem;
+    color: var(--mainColor);
+    background-color: var(--maincolorLight);
+}
+
+
+.logo{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo-email{
+    font-size: 13px;
+}
+
+header nav{
+    float: right;
+    justify-content: right;
+}
+
+nav a{
+    margin: 0 2rem;
+    color: var(--mainColor);
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: var(--mainColorMedium);
+}
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--mainColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+.bar {
+    font-size: 20px;
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 964px){
+
+    header{
+        margin: 0;
+    }
+
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bar {
+        visibility: hidden;
+    }
+
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--maincolorLight);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    }
+
+    nav a{
+    font-size: 1.5rem;
+    }
+    
+}

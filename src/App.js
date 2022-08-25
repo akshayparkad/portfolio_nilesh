@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css';
+import { Footer } from './components/Footer/Footer';
+import { Frisska } from './components/Frisska/Frisska';
+import { Home } from './components/Home/Home';
+import Navbar from './components/Navigation/Navbar';
+import { RightNXT } from './components/RightNXT/RightNXT';
+import { Work } from './components/Work/Work';
+import {IMGNRS} from './components/IMGNRS/IMGNRS';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+    <Navbar />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/rightNXT" exact element={<RightNXT />} />
+        <Route path="/frisska" exact element={<Frisska />} />
+        <Route path="/imgnrs" exact element={<IMGNRS />} />
+        <Route path="/work" exact element={<Work />} />
+      </Routes>
+    <Footer />
+    </HashRouter>
+
   );
 }
 

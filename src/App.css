@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Prompt:wght@500&display=swap');
+
+.spinner{
+  /* left: 100%;
+  margin-left: 10em; */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.after-spinner{
+  margin-left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --mainColor: #2f2f2f;
+  --mainColorMedium: #6b6969;
+  --maincolorLight: #F2F0F0;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  background-color: #F2F0F0;
+  font-style: normal;
+  box-sizing: border-box;
+  
+}
+
+.t-heading-t {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Prompt';
+  margin-top: 35px;
+  font-weight: 600 !important;
+  font-size: 55px;
+  color: #ffff;
+  margin-right: 192px;
+  margin-left: 192px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.paragraph {
+  font-family: 'Prompt';
+  color: var(--mainColorMedium);
+  margin-top: 17px;
+  font-weight: 50 !important;
+  font-size: 13px;
+  font-weight: lighter;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.paragraph2 {
+  font-family: 'Prompt';
+  color: var(--mainColorMedium);
+  font-weight: 50 !important;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+h6 {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 18px;
+  margin-top: 6px;
+  color: var(--mainColor);
+}
+
+h4 {
+  margin-top: 10px;
+  font-size: larger;
+  color:var(--mainColor)
+}
+
+h2 {
+  margin-top: 20px;
+  margin-right: 192px;
+  margin-left: 192px;
+  color: var(--mainColor);
+  font-size: xx-large;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover, a:visited{
+  color: var(--mainColor);
+}
+
+
+@media only screen and (max-width: 964px) {
+
+
+
+  .t-heading-t {
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1{
+    font-size: 50px;
   }
+
+  h2{
+    margin: 0;
+  }
+
 }
