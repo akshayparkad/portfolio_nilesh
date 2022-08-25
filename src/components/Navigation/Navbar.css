@@ -39,10 +39,6 @@ header {
     font-size: 13px;
 }
 
-header nav{
-    float: right;
-    justify-content: right;
-}
 
 nav a{
     margin: 0 2rem;
